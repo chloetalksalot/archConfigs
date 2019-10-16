@@ -1,0 +1,43 @@
+{
+   "app": {
+      "icon_color": "#B2B1B1",
+      "launch": {
+         "web_url": "https://blackboard.cwidaho.cc/webapps/portal/execute/tabs/tabAction?tab_tab_group_id=_1_1"
+      },
+      "linked_icons": [ {
+         "size": 16,
+         "url": "https://blackboard.cwidaho.cc/ui/bb-icon2.ico"
+      }, {
+         "size": 32,
+         "url": "https://blackboard.cwidaho.cc/ui/bb-icon2.ico"
+      }, {
+         "size": 48,
+         "url": "https://blackboard.cwidaho.cc/ui/bb-icon2.ico"
+      }, {
+         "size": 64,
+         "url": "https://blackboard.cwidaho.cc/ui/bb-icon2.ico"
+      }, {
+         "size": 96,
+         "url": "https://blackboard.cwidaho.cc/ui/bb-icon2.ico"
+      }, {
+         "size": 128,
+         "url": "https://blackboard.cwidaho.cc/ui/bb-icon2.ico"
+      }, {
+         "size": 256,
+         "url": "https://blackboard.cwidaho.cc/ui/bb-icon2.ico"
+      } ]
+   },
+   "description": "",
+   "icons": {
+      "128": "icons/128.png",
+      "16": "icons/16.png",
+      "256": "icons/256.png",
+      "32": "icons/32.png",
+      "48": "icons/48.png",
+      "64": "icons/64.png",
+      "96": "icons/96.png"
+   },
+   "key": "4hH07xj8bjrsxR295iYWfc+6hDHxsVDJkRtXTA90eA0=",
+   "name": "Blackboard",
+   "version": "2019.9.21.12470"
+}

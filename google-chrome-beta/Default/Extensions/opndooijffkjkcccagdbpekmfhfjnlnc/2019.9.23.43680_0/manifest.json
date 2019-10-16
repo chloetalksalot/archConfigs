@@ -1,0 +1,46 @@
+{
+   "app": {
+      "launch": {
+         "web_url": "http://www.crunchyroll.com/"
+      },
+      "linked_icons": [ {
+         "size": 16,
+         "url": "http://www.crunchyroll.com/favicon.ico?v=1"
+      }, {
+         "size": 32,
+         "url": "http://static.ak.crunchyroll.com/i/beta/ios_icon/cr_ios.png"
+      }, {
+         "size": 48,
+         "url": "http://static.ak.crunchyroll.com/i/beta/ios_icon/cr_ios.png"
+      }, {
+         "size": 64,
+         "url": "http://static.ak.crunchyroll.com/i/beta/ios_icon/cr_ios.png"
+      }, {
+         "size": 96,
+         "url": "http://static.ak.crunchyroll.com/i/beta/ios_icon/cr_ios.png"
+      }, {
+         "size": 128,
+         "url": "http://static.ak.crunchyroll.com/i/beta/ios_icon/cr_ios.png"
+      }, {
+         "size": 144,
+         "url": "http://static.ak.crunchyroll.com/i/beta/ios_icon/cr_ios.png"
+      }, {
+         "size": 256,
+         "url": "http://static.ak.crunchyroll.com/i/beta/ios_icon/cr_ios.png"
+      } ]
+   },
+   "description": "Watch the best anime online and legally stream simulcasts including Dragon Ball Super, Attack on Titan, Naruto Shippuden, My Hero Academia, One Piece, and more.",
+   "icons": {
+      "128": "icons/128.png",
+      "144": "icons/144.png",
+      "16": "icons/16.png",
+      "256": "icons/256.png",
+      "32": "icons/32.png",
+      "48": "icons/48.png",
+      "64": "icons/64.png",
+      "96": "icons/96.png"
+   },
+   "key": "OGKhqGMcVOsj5Mg+eXYV3frM9IKeimGeMCva/Hm1SmA=",
+   "name": "Crunchyroll",
+   "version": "2019.9.23.43680"
+}

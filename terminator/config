@@ -1,0 +1,56 @@
+[global_config]
+  enabled_plugins = TerminatorThemes, LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
+  title_transmit_bg_color = "#babdb6"
+  window_state = hidden
+[keybindings]
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      profile = Slate
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
+[plugins]
+[profiles]
+  [[default]]
+    background_darkness = 0.7
+    background_type = transparent
+    cursor_color = "#aaaaaa"
+    foreground_color = "#ffffff"
+  [[3024 Day]]
+    background_color = "#f7f7f7"
+    background_type = transparent
+    cursor_color = "#4a4543"
+    foreground_color = "#4a4543"
+    palette = "#090300:#db2d20:#01a252:#fded02:#01a0e4:#a16a94:#b5e4f4:#a5a2a2:#5c5855:#e8bbd0:#3a3432:#4a4543:#807d7c:#d6d5d4:#cdab53:#f7f7f7"
+  [[3024 Night]]
+    background_color = "#090300"
+    background_type = transparent
+    cursor_color = "#a5a2a2"
+    foreground_color = "#a5a2a2"
+    palette = "#090300:#db2d20:#01a252:#fded02:#01a0e4:#a16a94:#b5e4f4:#a5a2a2:#5c5855:#e8bbd0:#3a3432:#4a4543:#807d7c:#d6d5d4:#cdab53:#f7f7f7"
+  [[After Dark]]
+    background_color = "#10111b"
+    cursor_color = "#aaaaaa"
+    foreground_color = "#ffffff"
+    palette = "#2e3436:#ef4a9e:#00d2bc:#e7ca7a:#9399fa:#ca5bcc:#86d079:#d3d7cf:#555753:#ef4a9e:#00d2bc:#e7ca7a:#9399fa:#ca5bcc:#86d079:#eeeeec"
+  [[Brogrammer]]
+    background_color = "#131313"
+    cursor_color = "#b9b9b9"
+    foreground_color = "#d6dbe5"
+    palette = "#1f1f1f:#f81118:#2dc55e:#ecba0f:#2a84d2:#4e5ab7:#1081d6:#d6dbe5:#d6dbe5:#de352e:#1dd361:#f3bd09:#1081d6:#5350b9:#0f7ddb:#ffffff"
+  [[Material colors]]
+    background_color = "#1E282C"
+    cursor_color = "#657B83"
+    foreground_color = "#C3C7D1"
+    palette = "#073641:#EB606B:#C3E88D:#F7EB95:#80CBC3:#FF2490:#AEDDFF:#FFFFFF:#002B36:#EB606B:#C3E88D:#F7EB95:#7DC6BF:#6C71C3:#34434D:#FFFFFF"
+  [[Slate]]
+    background_color = "#222222"
+    background_darkness = 0.8
+    background_type = transparent
+    cursor_color = "#87d3c4"
+    foreground_color = "#35b1d2"
+    palette = "#222222:#e2a8bf:#81d778:#c4c9c0:#300a24:#a481d3:#15ab9c:#02c5e0:#ffffff:#ffcdd9:#beffa8:#d0ccca:#7ab0d2:#c5a7d9:#8cdfe0:#e0e0e0"
+    show_titlebar = False

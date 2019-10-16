@@ -1,0 +1,168 @@
+#          _         _                    _             _            _             _        _          _
+#         /\ \     /\ \                 /\ \           /\ \         /\ \     _    /\ \     /\ \       /\ \
+#         \ \ \   /  \ \               /  \ \         /  \ \       /  \ \   /\_\ /  \ \    \ \ \     /  \ \
+#         /\ \_\ / /\ \ \             / /\ \ \       / /\ \ \     / /\ \ \_/ / // /\ \ \   /\ \_\   / /\ \_\
+#        / /\/_// / /\ \ \           / / /\ \ \     / / /\ \ \   / / /\ \___/ // / /\ \_\ / /\/_/  / / /\/_/
+#       / / /   \/_//_\ \ \         / / /  \ \_\   / / /  \ \_\ / / /  \/____// /_/_ \/_// / /    / / / ______
+#      / / /      __\___ \ \       / / /    \/_/  / / /   / / // / /    / / // /____/\  / / /    / / / /\_____\
+#     / / /      / /\   \ \ \     / / /          / / /   / / // / /    / / // /\____\/ / / /    / / /  \/____ /
+# ___/ / /__    / /_/____\ \ \   / / /________  / / /___/ / // / /    / / // / /   ___/ / /__  / / /_____/ / /
+#/\__\/_/___\  /__________\ \ \ / / /_________\/ / /____\/ // / /    / / // / /   /\__\/_/___\/ / /______\/ /
+#\/_________/  \_____________\/ \/____________/\/_________/ \/_/     \/_/ \/_/    \/_________/\/___________/
+#
+#
+#
+# __   __  __   __  ___      _______  _______    _______  _______  _______  ___   _  _______  ______
+#|  |_|  ||  | |  ||   |    |       ||       |  |  _    ||       ||       ||   | | ||       ||    _ |
+#|       ||  |_|  ||   |    |    ___||  _____|  | |_|   ||    ___||       ||   |_| ||    ___||   | ||
+#|       ||       ||   |    |   |___ | |_____   |       ||   |___ |       ||      _||   |___ |   |_||_
+#|       ||_     _||   |___ |    ___||_____  |  |  _   | |    ___||      _||     |_ |    ___||    __  |
+#| ||_|| |  |   |  |       ||   |___  _____| |  | |_|   ||   |___ |     |_ |    _  ||   |___ |   |  | |
+#|_|   |_|  |___|  |_______||_______||_______|  |_______||_______||_______||___| |_||_______||___|  |_|
+#
+#
+# Last Updated 09-30-2019
+#
+# If it breaks rm and run i3-config-wizard
+
+set $mod Mod4
+font pango:Hack Nerd 8
+exec --no-startup-id xss-lock -- ~/.config/i3/lock.sh
+
+# pactl adjust volume in PulseAudio
+set $refresh_i3status killall -SIGUSR1 i3status
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% && $refresh_i3status
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5% && $refresh_i3status
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
+bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
+
+# Terminal
+bindsym $mod+Return exec i3-sensible-terminal
+
+# kill focused
+bindsym $mod+Shift+q kill
+
+# rofi
+bindsym $mod+d exec rofi -show drun
+
+# Dmenu Utils
+bindsym $mod+n exec networkmanager_dmenu
+bindsym $mod+b exec ~/.config/rofi/dmenu_bluetooth.sh
+
+# focus
+bindsym $mod+Left focus left
+bindsym $mod+Right focus right
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+
+# move focused
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Right move right
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+
+# splits
+bindsym $mod+h split h
+bindsym $mod+v split v
+
+# fullscreen
+bindsym $mod+f fullscreen toggle
+
+# screenshots {Using shutter}
+bindsym Print exec shutter
+
+# Workspaces
+# Varibles
+set $ws1 "1: "
+set $ws2 "2:  Two"
+set $ws3 "3:  Three"
+set $ws4 "4:  Four"
+set $ws5 "5:  Five"
+set $ws6 "6:  Six"
+set $ws7 "7: "
+set $ws8 "8: "
+set $ws9 "9: "
+set $ws10 "10: "
+
+# Switching
+bindsym $mod+1 workspace $ws1
+bindsym $mod+2 workspace $ws2
+bindsym $mod+3 workspace $ws3
+bindsym $mod+4 workspace $ws4
+bindsym $mod+5 workspace $ws5
+bindsym $mod+6 workspace $ws6
+bindsym $mod+7 workspace $ws7
+bindsym $mod+8 workspace $ws8
+bindsym $mod+9 workspace $ws9
+bindsym $mod+0 workspace $ws10
+
+# Move Focused
+bindsym $mod+Shift+1 move container to workspace $ws1
+bindsym $mod+Shift+2 move container to workspace $ws2
+bindsym $mod+Shift+3 move container to workspace $ws3
+bindsym $mod+Shift+4 move container to workspace $ws4
+bindsym $mod+Shift+5 move container to workspace $ws5
+bindsym $mod+Shift+6 move container to workspace $ws6
+bindsym $mod+Shift+7 move container to workspace $ws7
+bindsym $mod+Shift+8 move container to workspace $ws8
+bindsym $mod+Shift+9 move container to workspace $ws9
+bindsym $mod+Shift+0 move container to workspace $ws10
+
+# reload i3
+bindsym $mod+Shift+r restart
+
+# exit i3
+bindsym $mod+Shift+e exec ~/.config/i3/exit_menu.sh
+
+# resizing windows
+mode "resize" {
+  bindsym Left resize grow width 10 px
+  bindsym Right resize shrink width 10 px
+  bindsym Up resize grow height 10 px
+  bindsym Down resize shrink height 10 px
+  bindsym $mod+r mode "default"
+}
+bindsym $mod+r mode "resize"
+
+# Screen brightness {using light}
+bindsym XF86MonBrightnessUp exec light -A 10
+bindsym XF86MonBrightnessDown exec light -U 10
+
+# Player keys {using playerctl}
+bindsym XF86AudioPlay exec playerctl play-pause
+bindsym XF86AudioNext exec playerctl next
+bindsym XF86AudioPrev exec playerctl previous
+bindsym XF86HomePage exec playerctl play-pause
+bindsym $mod+XF86HomePage exec playerctl next
+bindsym $mod+Shift+XF86HomePage exec playerctl previous
+
+# Gaps
+for_window [class=".*"] border pixel 0
+gaps inner 10
+
+# Assignments {xprop}
+# Spotify
+for_window [class="Spotify"] move to workspace $ws10
+assign [class="Spotify"] $ws10
+# Chrome {Firefox can kiss my ass}
+assign [class="Google-chrome"] $ws9
+# Thunderbird
+assign [class="Thunderbird"] $ws8
+# Steam
+assign [class="Steam"] $ws7
+
+# Autostart
+exec spotify
+exec google-chrome-stable
+exec thunderbird
+exec steam
+exec PulseAudio
+exec compton
+
+# Wal {backgrounds in .backgrounds}
+exec ~/.config/i3/wal_start.sh
+bindsym XF86Mail exec ~/.config/i3/wal_start.sh
+bindsym Home exec ~/.config/i3/wal_start.sh
+
+# Polybar
+exec_always --no-startup-id ~/.config/polybar/launch.sh

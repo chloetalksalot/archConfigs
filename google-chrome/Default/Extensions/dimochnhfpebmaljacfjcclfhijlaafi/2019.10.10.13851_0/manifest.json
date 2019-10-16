@@ -1,0 +1,47 @@
+{
+   "app": {
+      "icon_color": "#0463B4",
+      "launch": {
+         "web_url": "https://outlook.office365.com/owa/?realm=mycwi.cc&vd=mail"
+      },
+      "linked_icons": [ {
+         "size": 16,
+         "url": "https://outlook.office365.com/owa/favicon.ico"
+      }, {
+         "size": 24,
+         "url": "https://outlook.office365.com/owa/favicon.ico"
+      }, {
+         "size": 32,
+         "url": "https://outlook.office365.com/owa/favicon.ico"
+      }, {
+         "size": 48,
+         "url": "https://outlook.office365.com/owa/favicon.ico"
+      }, {
+         "size": 64,
+         "url": "https://outlook.office365.com/owa/favicon.ico"
+      }, {
+         "size": 96,
+         "url": "https://outlook.office365.com/owa/favicon.ico"
+      }, {
+         "size": 128,
+         "url": "https://outlook.office365.com/owa/favicon.ico"
+      }, {
+         "size": 256,
+         "url": "https://outlook.office365.com/owa/favicon.ico"
+      } ]
+   },
+   "description": "",
+   "icons": {
+      "128": "icons/128.png",
+      "16": "icons/16.png",
+      "24": "icons/24.png",
+      "256": "icons/256.png",
+      "32": "icons/32.png",
+      "48": "icons/48.png",
+      "64": "icons/64.png",
+      "96": "icons/96.png"
+   },
+   "key": "JFfqmqs5vb5n6Tb9Sb5mFaNURZ2rYPMmVnNK6FQYVxA=",
+   "name": "StudentEmail",
+   "version": "2019.10.10.13851"
+}
