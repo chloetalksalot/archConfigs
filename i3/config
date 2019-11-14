@@ -27,7 +27,7 @@
 
 set $mod Mod4
 font pango:Hack Nerd 8
-exec --no-startup-id xss-lock -- ~/.config/i3/lock.sh
+exec --no-startup-id xss-lock -- ~/.config/scripts/lock.sh
 
 # pactl adjust volume in PulseAudio
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -47,7 +47,7 @@ bindsym $mod+d exec rofi -show drun
 
 # Dmenu Utils
 bindsym $mod+n exec networkmanager_dmenu
-bindsym $mod+b exec ~/.config/rofi/dmenu_bluetooth.sh
+bindsym $mod+b exec ~/.config/scripts/dmenu_bluetooth.sh
 
 # focus
 bindsym $mod+Left focus left
@@ -112,7 +112,7 @@ bindsym $mod+Shift+0 move container to workspace $ws10
 bindsym $mod+Shift+r restart
 
 # exit i3
-bindsym $mod+Shift+e exec ~/.config/i3/exit_menu.sh
+bindsym $mod+Shift+e exec ~/.config/scripts/exit_menu.sh
 
 # resizing windows
 mode "resize" {
@@ -145,7 +145,7 @@ gaps inner 10
 for_window [class="Spotify"] move to workspace $ws10
 assign [class="Spotify"] $ws10
 # Chrome {Firefox can kiss my ass}
-assign [class="Google-chrome"] $ws9
+assign [class="Chromium"] $ws9
 # Thunderbird
 assign [class="Thunderbird"] $ws8
 # Steam
@@ -153,16 +153,12 @@ assign [class="Steam"] $ws7
 
 # Autostart
 exec spotify
-exec google-chrome-stable
+exec chromium
 exec thunderbird
 exec steam
 exec PulseAudio
 exec compton
-
-# Wal {backgrounds in .backgrounds}
-exec ~/.config/i3/wal_start.sh
-bindsym XF86Mail exec ~/.config/i3/wal_start.sh
-bindsym Home exec ~/.config/i3/wal_start.sh
+exec nitrogen
 
 # Polybar
-exec_always --no-startup-id ~/.config/polybar/launch.sh
+exec_always --no-startup-id ~/.config/scripts/launch.sh
