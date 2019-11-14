@@ -1,8 +1,0 @@
-2019/09/30-19:48:00.310 4a7 Reusing MANIFEST /home/myles/.config/google-chrome-beta/Default/IndexedDB/https_support.pearson.com_0.indexeddb.leveldb/MANIFEST-000001
-2019/09/30-19:48:03.130 ad0 Level-0 table #5: started
-2019/09/30-19:48:03.166 ad0 Level-0 table #5: 243791 bytes OK
-2019/09/30-19:48:03.243 ad0 Delete type=0 #3
-2019/09/30-19:48:03.244 ad0 Manual compaction at level-0 from '\x00\x05\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x06\x00\x00\x00' @ 0 : 0; will stop at (end)
-2019/09/30-19:48:05.422 ad0 Level-0 table #7: started
-2019/09/30-19:48:05.506 ad0 Level-0 table #7: 1460064 bytes OK
-2019/09/30-19:48:05.565 ad0 Delete type=0 #4

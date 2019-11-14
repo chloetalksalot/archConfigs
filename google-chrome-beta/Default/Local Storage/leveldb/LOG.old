@@ -1,5 +1,0 @@
-2019/10/09-15:51:23.426 4cf Reusing MANIFEST leveldb/MANIFEST-000001
-2019/10/09-15:51:23.428 4cf Recovering log #614
-2019/10/09-15:51:23.691 4cf Level-0 table #617: started
-2019/10/09-15:51:24.071 4cf Level-0 table #617: 15036 bytes OK
-2019/10/09-15:51:25.006 4cf Delete type=0 #614

@@ -1,6 +1,0 @@
-2019/10/15-18:34:37.534 1f99 Reusing MANIFEST /home/myles/.config/google-chrome/Default/Sync Data/LevelDB/MANIFEST-000001
-2019/10/15-18:34:37.534 1f99 Recovering log #35
-2019/10/15-18:34:37.752 1f99 Reusing old log /home/myles/.config/google-chrome/Default/Sync Data/LevelDB/000035.log 
-2019/10/15-19:00:50.521 12aa0 Level-0 table #39: started
-2019/10/15-19:00:50.561 12aa0 Level-0 table #39: 144307 bytes OK
-2019/10/15-19:00:50.596 12aa0 Delete type=0 #35
