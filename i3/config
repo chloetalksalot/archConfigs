@@ -21,12 +21,13 @@
 #|_|   |_|  |___|  |_______||_______||_______|  |_______||_______||_______||___| |_||_______||___|  |_|
 #
 #
-# Last Updated 11-13-2019
+# Last Updated 12-04-2019
 #
 # If it breaks rm and run i3-config-wizard
 
 set $mod Mod4
 font pango:Hack Nerd 8
+# CHANGE FONT TO SOMETHING ELSE?
 exec --no-startup-id xss-lock -- ~/.config/scripts/lock.sh
 
 # pactl adjust volume in PulseAudio
@@ -139,22 +140,24 @@ bindsym $mod+Shift+XF86HomePage exec playerctl previous
 # Gaps
 for_window [class=".*"] border pixel 0
 gaps inner 10
+# ADD MOD KEY FOR GAPS?
 
 # Assignments {xprop}
 # Spotify
 for_window [class="Spotify"] move to workspace $ws10
 assign [class="Spotify"] $ws10
-# Chrome {Firefox can kiss my ass}
+# Chromium {Firefox can kiss my ass}
 assign [class="Chromium"] $ws9
-# Thunderbird
-assign [class="Thunderbird"] $ws8
+# Mailspring
+assign [class="Mailspring"] $ws8
 # Steam
+for_window [class="Steam"] move to workspace $ws7
 assign [class="Steam"] $ws7
 
 # Autostart
 exec spotify
 exec chromium
-exec thunderbird
+exec mailspring
 exec steam
 exec PulseAudio
 exec compton
@@ -162,3 +165,5 @@ exec nitrogen
 
 # Polybar
 exec_always --no-startup-id ~/.config/scripts/launch.sh
+
+# ADD SCRIPT FOR WAL?
