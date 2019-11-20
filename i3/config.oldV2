@@ -26,7 +26,8 @@
 # If it breaks rm and run i3-config-wizard
 
 set $mod Mod4
-font pango:Space Mono 8
+font pango:Hack Nerd 8
+# CHANGE FONT TO SOMETHING ELSE?
 exec --no-startup-id xss-lock -- ~/.config/scripts/lock.sh
 
 # pactl adjust volume in PulseAudio
@@ -139,12 +140,7 @@ bindsym $mod+Shift+XF86HomePage exec playerctl previous
 # Gaps
 for_window [class=".*"] border pixel 0
 gaps inner 10
-bindsym $mod+o exec --no-startup-id "if [ `i3-msg -t get_tree | grep -Po \
-    '.*\\"gaps\\":{\\"inner\\":\K(-|)[0-9]+(?=.*\\"focused\\":true)'` -eq 0 ]; then \
-        i3-msg gaps inner current set 0; \
-    else \
-        i3-msg gaps inner current set 10; \
-    fi"
+# ADD MOD KEY FOR GAPS?
 
 # Assignments {xprop}
 # Spotify
@@ -165,10 +161,9 @@ exec mailspring
 exec steam
 exec PulseAudio
 exec compton
+exec nitrogen
 
 # Polybar
 exec_always --no-startup-id ~/.config/scripts/launch.sh
 
-# Wal
-exec --no-startup-id ~/.config/scripts/wal.sh
-bindsym $mod+w ~/.config/scripts/wal.sh
+# ADD SCRIPT FOR WAL?
