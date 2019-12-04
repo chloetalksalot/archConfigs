@@ -1,3 +1,3 @@
 #!/bin/bash
-wal -i ~/.backgrounds/
+wpg -m
 spicetify restart
