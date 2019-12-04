@@ -171,4 +171,4 @@ exec_always --no-startup-id ~/.config/scripts/launch.sh
 
 # Wal
 exec --no-startup-id ~/.config/scripts/wal.sh
-bindsym $mod+w ~/.config/scripts/wal.sh
+bindsym $mod+w exec ~/.config/scripts/wal.sh
