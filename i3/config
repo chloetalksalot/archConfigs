@@ -21,7 +21,7 @@
 #|_|   |_|  |___|  |_______||_______||_______|  |_______||_______||_______||___| |_||_______||___|  |_|
 #
 #
-# Last Updated 12-04-2019
+# Last Updated 12-05-2019
 #
 # If it breaks rm and run i3-config-wizard
 
@@ -78,7 +78,7 @@ set $ws2 "2:  Two"
 set $ws3 "3:  Three"
 set $ws4 "4:  Four"
 set $ws5 "5:  Five"
-set $ws6 "6:  Six"
+set $ws6 "6: �"
 set $ws7 "7: "
 set $ws8 "8: "
 set $ws9 "9: "
@@ -157,6 +157,8 @@ assign [class="Mailspring"] $ws8
 # Steam
 for_window [class="Steam"] move to workspace $ws7
 assign [class="Steam"] $ws7
+# Deluge
+assign [class="Deluge"] $ws6
 
 # Autostart
 exec spotify
@@ -165,6 +167,7 @@ exec mailspring
 exec steam
 exec PulseAudio
 exec compton
+exec deluge
 
 # Polybar
 exec_always --no-startup-id ~/.config/scripts/launch.sh
