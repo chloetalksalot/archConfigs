@@ -6,3 +6,6 @@ cp -r scripts/ ~/.config/
 sudo cp -r backgrounds/* /usr/share/backgrounds/
 cp -r backgrounds/* ~/.backgrounds/
 cp -r rofi/ ~/.config/
+mkdir ~/.themes
+wpg-install.sh -g
+wpg -a ~/.backgrounds/*
