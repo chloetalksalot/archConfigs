@@ -1,0 +1,34 @@
+# Conky Word Clock
+use_xft yes
+xftfont Ubuntu Regular:size=8
+
+update_interval 1
+total_run_times 0
+
+own_window yes
+own_window_transparent yes
+own_window_hints undecorated,sticky,skip_taskbar,skip_pager
+own_window_type desktop
+# own_window_argb_visual yes -needs this patch: https://github.com/brndnmtthws/conky/pull/84
+own_window_class override
+draw_shades no
+draw_outline no
+draw_borders no
+double_buffer yes # change to no for cool flikering effect
+imlib_cache_size 0
+
+alignment tr
+gap_x 70
+gap_y 75
+minimum_size 300 90
+
+color0 ffffff
+color1 e6e6e6
+color2 1a1a1a
+color3 000000
+
+TEXT
+${if_running spotify}
+${image $HOME/spotify-display/latest.jpg -p 210/0,0 -s 90x90}
+${voffset 5}${execpi 2 python $HOME/spotify-display/spotify_getinfo.py}
+${endif}
